@@ -1,0 +1,279 @@
+:root {
+  --dark-gray: #282828;
+  --torquise-hglt: #30fbef;
+  --purpur: #8c50ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Century Gothic", sans-serif;
+  background: var(--dark-gray);
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--torquise-hglt);
+  margin: 0 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: white;
+  /* padding-right: 2rem; */
+  line-height: 160%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 2rem auto;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 1rem auto;
+  font-weight: bolder;
+}
+
+.container-main {
+  width: 75%;
+  margin: 100px auto;
+}
+
+/* HEADER */
+.container-header {
+  display: flex;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.container-header nav {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li {
+  display: inline-flex;
+  list-style: none;
+  margin: 0 1rem;
+}
+
+#branding {
+  display: flex;
+  align-items: center;
+}
+
+.current {
+  color: var(--torquise-hglt);
+}
+
+/* Section TOPICS */
+.topic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.phantom {
+  color: #2e3134;
+}
+
+/* TABS */
+.tab {
+  margin: 100px 0;
+  padding: 100px;
+  width: 1117px;
+  /* height: 560px; */
+  background: radial-gradient(38.2% 50% at 50% 50%, #2e3134 0%, #292b2e 100%);
+  border: 2px solid #272829;
+  box-shadow: inset 2px 2px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.img-tab-1 {
+  height: 300px;
+}
+
+.img-app {
+  position: absolute;
+  z-index: 1;
+  width: 650px;
+  transform: translate(-45px, -370px);
+}
+
+/* CARDS */
+.owl-carousel {
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.card {
+  background: var(--dark-gray);
+  box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25),
+    -9px -9px 10px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  margin: 20px;
+  padding: 50px;
+  width: 645px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: left;
+  justify-content: center;
+}
+
+.card-content {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.card-uname {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--torquise-hglt);
+}
+
+.card-usubt {
+  font-size: 0.7rem;
+  color: var(--purpur);
+  justify-content: center;
+  align-self: center;
+}
+
+.card-usubt i {
+  font-size: 1rem;
+}
+
+.on {
+  color: var(--torquise-hglt);
+  background: #282828;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25),
+    -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+}
+
+.off {
+  color: var(--dark-gray);
+  background: #282828;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25),
+    -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+}
+
+.uk-section {
+  background-color: #666;
+}
+.owl-carousel {
+  position: relative;
+  margin-top: 30px;
+}
+.owl-nav {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+}
+.uk-card-primary {
+  border-radius: 8px;
+}
+h3 {
+  margin-top: 10px;
+}
+.uk-card > :last-child {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.owl-next {
+  background: #3286f0;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  background: #383838;
+}
+.owl-dots {
+  margin-top: 30px;
+}
+.uk-card-title {
+  padding-bottom: 20px;
+}
+
+.uk-margin {
+  height: fit-content;
+}
+
+/* BUTTONS */
+.btn {
+  background: var(--dark-gray);
+  width: 210px;
+  height: 60px;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25),
+    -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  border: var(--dark-gray);
+  color: var(--torquise-hglt);
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.button_1 {
+  background: var(--dark-gray);
+  width: 210px;
+  height: 60px;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25),
+    -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  border: var(--dark-gray);
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn p {
+  color: white;
+  font-weight: 600;
+}
+
+.btn i {
+  color: var(--purpur);
+}
